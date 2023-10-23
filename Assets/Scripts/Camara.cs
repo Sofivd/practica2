@@ -17,8 +17,8 @@ public class Camara : MonoBehaviour
     void Update()
     {
         //(codigo para que la camara siga el objeto)
-        transform.position = Oveja.transform.position;
-        // transform.position = new Vector3(Oveja.transform.position.x, transform.position.y + offsetY, transform.position.z + offsetZ);
+        //transform.position = Oveja.transform.position; // primero
+        transform.position = new Vector3(Oveja.transform.position.x, Oveja.transform.position.y + offsetY, Oveja.transform.position.z - offsetZ);  // tercera
     }
     
 }

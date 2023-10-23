@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d9c32f14f96588d448c55ad66809316f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: 3748359892381204692, guid: d9c32f14f96588d448c55ad66809316f, type: 3}
       propertyPath: m_LocalScale.x
@@ -640,6 +640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efef597399f83c479dfed916b1dd701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  target: {fileID: 1350399971}
 --- !u!65 &760635725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -659,8 +661,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.33824274, y: 0.9058654, z: 1.223192}
+  m_Center: {x: 0.0032530874, y: 0.3953676, z: 0.0059005283}
 --- !u!1 &860250515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
@@ -792,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b4cbe3d9c6c4842a6e4fc99c4d84e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Oveja: {fileID: 1666683262}
+  Oveja: {fileID: 1350399966}
   offsetY: 0
   offsetZ: 0
 --- !u!1 &1033000739
@@ -1154,15 +1156,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.44
+      value: 111.98
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2543
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.36
+      value: 52.46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1309,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oveja
       objectReference: {fileID: 0}
+    - target: {fileID: 4077612351692668892, guid: 0322c9b0c4f4d93418d648ec9405b63d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4077612351692668895, guid: 0322c9b0c4f4d93418d648ec9405b63d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.97348
@@ -1381,98 +1387,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1666683273}
   m_SourcePrefab: {fileID: 100100000, guid: 0322c9b0c4f4d93418d648ec9405b63d, type: 3}
---- !u!1 &1916772494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1916772497}
-  - component: {fileID: 1916772496}
-  - component: {fileID: 1916772495}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1916772495
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916772494}
-  m_Enabled: 1
---- !u!20 &1916772496
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916772494}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1916772497
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916772494}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.41695967, y: 0.65318877, z: -0.288279, w: 0.5624805}
-  m_LocalPosition: {x: 90.2, y: 2.84, z: 35.62}
-  m_LocalScale: {x: 0.92045, y: 1.106473, z: 0.92045}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 57.743, y: 112.126, z: 24.391}
 --- !u!1 &2078759469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,4 +6306,3 @@ SceneRoots:
   - {fileID: 72203612}
   - {fileID: 462858726}
   - {fileID: 450187459}
-  - {fileID: 1916772497}

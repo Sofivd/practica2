@@ -14,6 +14,6 @@ public class RotEsfera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(puntoGiro.transform.position, Vector3.up, 70 * Time.deltaTime);
+        transform.RotateAround(puntoGiro.transform.position, Vector3.up, 200 * Time.deltaTime);
     }
 }

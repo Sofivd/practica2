@@ -50,6 +50,15 @@ public class Movimientocapsula : MonoBehaviour
             gameOver = true;
             Time.timeScale = 0f;
         }
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Recolectable")
+        {
+            Destroy(other.gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -63,11 +72,6 @@ public class Movimientocapsula : MonoBehaviour
             saltar = false;
             sobreSuelo = false;
         }
-
-        void OnTriggerEnter(Collider collision)
-        {
-            Debug.Log(collision.gameObject.name);
-            Destroy(collision.gameObject);
-        }
     }
+
 }
