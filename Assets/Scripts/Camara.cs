@@ -5,7 +5,7 @@ using UnityEngine;
 public class Camara : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject capsula;
+    public GameObject Oveja;
     public float offsetY;
     public float offsetZ;
     void Start()
@@ -17,8 +17,8 @@ public class Camara : MonoBehaviour
     void Update()
     {
         //(codigo para que la camara siga el objeto)
-        // transform.position = capsula.transform.position;
-        transform.position = new Vector3(capsula.transform.position.x, transform.position.y + offsetY, transform.position.z + offsetZ);
+        transform.position = Oveja.transform.position;
+        // transform.position = new Vector3(Oveja.transform.position.x, transform.position.y + offsetY, transform.position.z + offsetZ);
     }
     
 }

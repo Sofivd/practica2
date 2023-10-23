@@ -64,7 +64,7 @@ public class Movimientocapsula : MonoBehaviour
             sobreSuelo = false;
         }
 
-        void OnTriggerEnter (Collider collision)
+        void OnTriggerEnter(Collider collision)
         {
             Debug.Log(collision.gameObject.name);
             Destroy(collision.gameObject);
