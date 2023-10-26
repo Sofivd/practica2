@@ -61,6 +61,8 @@ public class Movimientocapsula : MonoBehaviour
         }
     }
 
+   
+
     private void FixedUpdate()
     {
         Vector3 nuevaVelocidad = new Vector3(movX * speed, fisicas.velocity.y, movZ * speed);

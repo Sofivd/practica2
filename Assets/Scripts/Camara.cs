@@ -19,6 +19,13 @@ public class Camara : MonoBehaviour
         //(codigo para que la camara siga el objeto)
         //transform.position = Oveja.transform.position; // primero
         transform.position = new Vector3(Oveja.transform.position.x, Oveja.transform.position.y + offsetY, Oveja.transform.position.z - offsetZ);  // tercera
+       
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            offsetZ = 5;
+
+        }
+       
     }
     
 }
