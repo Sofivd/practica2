@@ -12,9 +12,14 @@ public class Movimientocapsula : MonoBehaviour
     public bool saltar = false;
     public float fuerzadeSalto = 10f;
     public bool gameOver;
+    public GameObject menuPausa;
+    bool estaEnPausa;
+
+
     void Start()
     {
         fisicas = GetComponent<Rigidbody>();
+        estaEnPausa = false;
     }
 
     // Update is called once per frame
@@ -22,7 +27,7 @@ public class Movimientocapsula : MonoBehaviour
     {
         movX = Input.GetAxis("Horizontal");
         movZ = Input.GetAxis("Vertical");
-        // Vector3 direccion = new Vector3(movX, movZ);
+        // Vector3 dir eccion = new Vector3(movX, movZ);
         // transform.Translate(direccion * Time.deltaTime * 10);
 
 
@@ -30,6 +35,22 @@ public class Movimientocapsula : MonoBehaviour
         {
           saltar = true;
 
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape) == true)
+        {
+            if(estaEnPausa == true)
+            {
+                menuPausa.gameObject.SetActive(false);
+                estaEnPausa = false;
+                Time.timeScale = 1.0f;
+            }
+            else
+            {
+                menuPausa.gameObject.SetActive(true);
+                estaEnPausa = true;
+                Time.timeScale = 0.0f;
+            }
         }
     }
 
