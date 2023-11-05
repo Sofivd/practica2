@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Volumen : MonoBehaviour
 {
     
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -15,10 +13,10 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-   
-
     
+
+ 
 }

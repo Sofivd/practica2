@@ -14,6 +14,9 @@ public class Movimientocapsula : MonoBehaviour
     public bool gameOver;
     public GameObject menuPausa;
     bool estaEnPausa;
+    public GameObject bandaSonora;
+    public GameObject Restart;
+    
 
 
     void Start()
@@ -37,22 +40,28 @@ public class Movimientocapsula : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape) == true)
+       if(Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            if(estaEnPausa == true)
-            {
-                menuPausa.gameObject.SetActive(false);
-                estaEnPausa = false;
-                Time.timeScale = 1.0f;
+           if(estaEnPausa == true)
+           {
+              menuPausa.gameObject.SetActive(false);
+               estaEnPausa = false;
+               Time.timeScale = 1.0f;
+               bandaSonora.gameObject.SetActive(true);
             }
-            else
-            {
-                menuPausa.gameObject.SetActive(true);
-                estaEnPausa = true;
-                Time.timeScale = 0.0f;
+          else
+          {
+             menuPausa.gameObject.SetActive(true);
+             estaEnPausa = true;
+             Time.timeScale = 0.0f;
+                bandaSonora.gameObject.SetActive(false);
             }
-        }
+         }
+
+
+
     }
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -95,6 +104,17 @@ public class Movimientocapsula : MonoBehaviour
             saltar = false;
             sobreSuelo = false;
         }
+    }
+    public void BotonSonidoON()
+    {
+        bandaSonora.gameObject.SetActive(true);
+        Debug.Log("El sonido está activado");
+    }
+
+    public void BotonSonidoOFF()
+    {
+        bandaSonora.gameObject.SetActive(false);
+        Debug.Log("El sonido está desactivado");
     }
 
 }
