@@ -11,4 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/practica2.unity
     guid: afac53fcef3eaae409a6b6012e1c9c8e
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/CambiarIdioma.unity
+    guid: 01ff026e3f3259646b8392b4712d973f
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: c6d423295cb991243b42c36dde2beacd, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 26b54e8c63102b44481ea727573a7a29, type: 2}

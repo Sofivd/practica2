@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: IdiomaTexto Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: IdiomaTexto
+  m_TableCollectionNameGuidString: e2fbb059c6089284b9b896d347c0a3c7
+  m_Entries:
+  - m_Id: 8898895872
+    m_Key: Menupausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1818388750336
+    m_Key: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2265765797888
+    m_Key: VolveralJuego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2773545017344
+    m_Key: Dificultad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3533762617344
+    m_Key: Sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3753405734912
+    m_Key: "F\xE1cil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3928723447808
+    m_Key: Normal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4196118716416
+    m_Key: "Dif\xEDcil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8797144375296
+    m_Key: Iniciar juego
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8920749204129447967
+  references:
+    version: 2
+    RefIds:
+    - rid: 8920749204129447967
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699287592894

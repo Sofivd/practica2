@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TablaIdiomas Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TablaIdiomas
+  m_TableCollectionNameGuidString: 084e3a10fcabf4b4194f125cbdb1ca40
+  m_Entries:
+  - m_Id: 8953421824
+    m_Key: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278928187392
+    m_Key: CambiarIdioma
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 8920749204129447961
+    - rid: 8920749204129447962
+  m_KeyGenerator:
+    rid: 8920749204129447960
+  references:
+    version: 2
+    RefIds:
+    - rid: 8920749204129447960
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699285777632
+    - rid: 8920749204129447961
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 8953421824
+          m_TableCodes:
+          - en
+          - ja
+          - es
+        m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - rid: 8920749204129447962
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 278928187392
+          m_TableCodes:
+          - en
+          - ja
+          - es
+        m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
