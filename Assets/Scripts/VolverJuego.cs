@@ -7,6 +7,6 @@ public class VolverJuego : MonoBehaviour
 {
     public void Volver()
     {
-        SceneManager.LoadScene("Practica2");
+        SceneManager.LoadScene("menuprincipal");
     }
 }

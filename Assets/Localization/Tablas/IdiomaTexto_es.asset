@@ -54,6 +54,26 @@ MonoBehaviour:
     m_Localized: Iniciar juego
     m_Metadata:
       m_Items: []
+  - m_Id: 349525460541440
+    m_Localized: Idiomas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349688803516416
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349818826940416
+    m_Localized: "Ingl\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349967070420992
+    m_Localized: "Japon\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350566486794240
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

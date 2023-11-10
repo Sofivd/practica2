@@ -15,7 +15,8 @@ public class Movimientocapsula : MonoBehaviour
     public GameObject menuPausa;
     bool estaEnPausa;
     public GameObject bandaSonora;
-    public GameObject Restart;
+    public GameObject menuIdiomas;
+    bool estaenIdiomas;
     
 
 
@@ -57,7 +58,7 @@ public class Movimientocapsula : MonoBehaviour
                 bandaSonora.gameObject.SetActive(false);
             }
          }
-
+       
 
 
     }
@@ -116,5 +117,20 @@ public class Movimientocapsula : MonoBehaviour
         bandaSonora.gameObject.SetActive(false);
         Debug.Log("El sonido está desactivado");
     }
+    public void VolverAlMenu()
+    {
+        menuIdiomas.gameObject.SetActive(false);
+        estaEnPausa = false;
+    }
 
+    public void Idiomas()
+    {
+        menuIdiomas.gameObject.SetActive(true);
+        menuPausa.gameObject.SetActive(false);
+    }
+    public void Restart()
+    {
+        menuPausa.gameObject.SetActive(false);
+
+    }
 }

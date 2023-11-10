@@ -54,6 +54,26 @@ MonoBehaviour:
     m_Localized: Start game
     m_Metadata:
       m_Items: []
+  - m_Id: 349525460541440
+    m_Localized: Languages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349688803516416
+    m_Localized: Spanish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349818826940416
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349967070420992
+    m_Localized: Japanese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350566486794240
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -51,6 +51,26 @@ MonoBehaviour:
     m_Key: Iniciar juego
     m_Metadata:
       m_Items: []
+  - m_Id: 349525460541440
+    m_Key: IdiomasTexto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349688803516416
+    m_Key: "BotonEspa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349818826940416
+    m_Key: BotonIngles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349967070420992
+    m_Key: BotonJapones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350566486794240
+    m_Key: VolverMenu
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
